@@ -1,3 +1,6 @@
+//This code based on https://www.codeproject.com/Articles/1225196/Create-Your-Own-Kernel-In-C
+//License: Code Project Open License (CPOL)
+
 #ifndef _KERNEL_H_
 #define _KERNEL_H_
 

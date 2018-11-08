@@ -2,7 +2,7 @@ CC=gcc
 CFlags=-m32 -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 LFlags=-m32 -Wl,--build-id=none -ffreestanding -O2 -nostdlib -lgcc
 
-all:bin/iso
+MyOS.iso:bin/iso
 
 bin/iso:bin/MyOS.bin grub.cfg
 	mkdir -p bin/iso/boot/grub
@@ -17,7 +17,9 @@ bin/MyOS.bin:kernel.c boot.s bin
 	$(CC) $(CFlags) -c kernel.c -o bin/kernel.o
 	$(CC) $(LFlags) -T linker.ld bin/kernel.o bin/boot.o -o bin/MyOS.bin
 
-run:all
+all:MyOS.iso
+
+run:MyOS.iso
 	qemu-system-x86_64 -cdrom MyOS.iso
 
 clean:

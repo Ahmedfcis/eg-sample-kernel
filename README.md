@@ -1,13 +1,21 @@
 # eg-sample-kernel
 
-##Build
+## Build
+
 make
 
-##Run
+## Run
+
 make run
 
-##Clean
+## Clean
+
 make clean
 
-##Prerequisites
+## Prerequisites
+
 sudo apt-get install gcc gcc-multilib xorriso
+
+## Reference
+
+https://www.codeproject.com/Articles/1225196/Create-Your-Own-Kernel-In-C
