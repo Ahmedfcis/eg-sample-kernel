@@ -4,6 +4,11 @@
 
 make
 
+### To build with docker
+
+make docker-image
+make docker-build
+
 ## Run
 
 make run
