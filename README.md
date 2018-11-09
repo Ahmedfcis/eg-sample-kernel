@@ -14,7 +14,7 @@ make clean
 
 ## Prerequisites
 
-sudo apt-get install gcc gcc-multilib xorriso
+sudo apt-get install gcc gcc-multilib build-essential xorriso grub-pc-bin
 
 ## Reference
 
