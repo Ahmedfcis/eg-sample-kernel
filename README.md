@@ -6,8 +6,8 @@ make
 
 ### To build with docker
 
-make docker-image
-make docker-build
+1. make docker-image
+2. make docker-build
 
 ## Run
 
